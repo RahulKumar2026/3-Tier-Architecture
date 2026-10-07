@@ -1,0 +1,101 @@
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build output
+# =========================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# =========================
+# .NET
+# =========================
+*.dll
+*.exe
+*.pdb
+*.cache
+*.tmp
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# =========================
+# ASP.NET / Web
+# =========================
+wwwroot/lib/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# User-specific files
+# =========================
+*.rsuser
+*.suo
+*.user
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Local configuration
+# =========================
+appsettings.Local.json
+appsettings.Development.local.json
+
+# =========================
+# Test results
+# =========================
+TestResults/
+*.trx
+
+# =========================
+# Coverage
+# =========================
+coverage/
+coverage.opencover.xml
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Generated files
+# =========================
+Generated/
