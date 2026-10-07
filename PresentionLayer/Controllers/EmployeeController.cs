@@ -26,5 +26,19 @@ namespace PresentionLayer.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+        [HttpGet]
+        [Route("get-Employee-by-Id/{id}")]
+        public async Task<IActionResult> GetEmployeesByIdAsync(int id)
+        {
+            try
+            {
+                var employee = await _getEmployeesBusinessLogic.GetEmployeesByIdAsync(id);
+                return Ok(employee);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

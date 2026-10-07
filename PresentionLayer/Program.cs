@@ -14,6 +14,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddScoped<IGetEmployeesDataAccess, GetEmployeesDataAccess>();
 builder.Services.AddScoped<IGetEmployeesBusinessLogic, GetEmployessBussinessLogic>();

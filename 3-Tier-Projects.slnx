@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="BussinessLogicLayer/BussinessLogicLayer.csproj" />
   <Project Path="DataLayer/DataLayer.csproj" />
   <Project Path="PresentionLayer/PresentionLayer.csproj" />

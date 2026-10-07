@@ -1,5 +1,6 @@
 ﻿using BusinessLogicLayer.Service.Interface;
 using BussinessLogicLayer.DTOs;
+using DataLayer.Models;
 using DataLayer.Repository.Interface;
 namespace BusinessLogicLayer.Service
 {
@@ -35,6 +36,24 @@ namespace BusinessLogicLayer.Service
             catch (Exception ex) 
             {
                 throw new Exception($"Error retrieving employees: {ex.Message}", ex);
+            }
+        }
+        public async Task<EmployeeDepartmentView> GetEmployeesByIdAsync(int id)
+        {
+            try
+            {
+                // Call the data access layer to get the employee by ID
+                var employee = await _getEmployessDataAccess.GetEmployeesByIdAsyncDataLayer(id);
+                // Validate the employee object
+                if (employee == null)
+                {
+                    throw new Exception($"Employee with ID {id} not found.");
+                }
+                return employee;
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception($"Error retrieving employee by ID: {ex.Message}", ex);
             }
         }
     }
